@@ -1,0 +1,1 @@
+type ValidationType = (SubjectType) => boolean

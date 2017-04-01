@@ -1,0 +1,1 @@
+type ScopeType = string
