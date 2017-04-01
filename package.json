@@ -1,0 +1,59 @@
+{
+  "name": "validus",
+  "version": "4.0.1",
+  "description": "An iterable validation library",
+  "main": "transpiled/source/index.js",
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "babel './source/**/index.js' -d './transpiled/'",
+    "test": "babel-tap --jobs=2 './source/**/test.js'",
+    "start": "npm-run-all --parallel watch:build watch:test",
+    "lint": "eslint './source/'",
+    "watch": "npm-run-all --parallel watch:test watch:lint watch:build",
+    "watch:build": "chokidar './source/' --initial --command 'npm run build --silent'",
+    "watch:test": "chokidar './source/' --initial --command 'npm run test --silent'",
+    "watch:lint": "chokidar './source/' --initial --command 'npm run lint --silent'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krainboltgreene/validus.js.git"
+  },
+  "keywords": [
+    "validations",
+    "valid",
+    "data"
+  ],
+  "author": "Kurtis Rainbolt-Greene (@krainboltgreene) <kurtis@rainbolt-greene.online>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/krainboltgreene/validus.js/issues"
+  },
+  "homepage": "https://github.com/krainboltgreene/validus.js#readme",
+  "devDependencies": {
+    "babel-cli": "6.24.0",
+    "babel-core": "6.24.0",
+    "babel-eslint": "7.2.1",
+    "babel-plugin-transform-object-rest-spread": "6.23.0",
+    "babel-preset-env": "1.2.2",
+    "babel-preset-flow": "6.23.0",
+    "babel-tap": "5.0.0",
+    "chokidar-cli": "1.2.0",
+    "eslint": "3.18.0",
+    "eslint-plugin-babel": "4.1.1",
+    "eslint-plugin-flowtype": "2.30.4",
+    "eslint-plugin-immutable": "1.0.0",
+    "eslint-plugin-import": "2.2.0",
+    "eslint-plugin-promise": "3.5.0",
+    "flow": "0.2.3",
+    "flow-bin": "0.42.0",
+    "flow-typed": "2.0.0",
+    "greenkeeper": "4.2.1",
+    "npm-run-all": "4.0.2",
+    "sinon": "2.1.0",
+    "tap": "10.3.0"
+  },
+  "dependencies": {
+    "ramda": "0.23.0",
+    "ramda-extra": "4.0.1"
+  }
+}
