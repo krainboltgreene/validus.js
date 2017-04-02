@@ -9,6 +9,7 @@
     "test": "babel-tap --jobs=2 './source/**/test.js'",
     "start": "npm-run-all --parallel watch:build watch:test",
     "lint": "eslint './source/'",
+    "check": "flow './source/'",
     "watch": "npm-run-all --parallel watch:test watch:lint watch:build",
     "watch:build": "chokidar './source/' --initial --command 'npm run build --silent'",
     "watch:test": "chokidar './source/' --initial --command 'npm run test --silent'",
