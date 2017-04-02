@@ -1,5 +1,7 @@
 # validus
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/krainboltgreene/validus.js.svg)](https://greenkeeper.io/)
+
 Take an iterable and ensure that the members match a set of constraints.
 
 ![Version][BADGE_VERSION]
