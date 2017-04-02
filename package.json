@@ -1,6 +1,6 @@
 {
   "name": "validus",
-  "version": "4.0.1",
+  "version": "1.0.0",
   "description": "An iterable validation library",
   "main": "transpiled/source/index.js",
   "scripts": {
