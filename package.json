@@ -54,6 +54,6 @@
   },
   "dependencies": {
     "ramda": "0.23.0",
-    "ramda-extra": "4.0.1"
+    "ramda-extra": "4.1.2"
   }
 }
