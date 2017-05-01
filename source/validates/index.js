@@ -1,10 +1,10 @@
-import {map} from "ramda"
-import {compact} from "ramda-extra"
+import mapValues from "@unction/mapvalues"
+import compact from "@unction/compact"
 
 import validated from "../validated"
 
 export default function validates (validations: ValidationsType): Function {
   return function validatesWithValidations (subject: SubjectType): ErrorsType {
-    return compact(map(validated(subject))(validations))
+    return compact(mapValues(validated(subject))(validations))
   }
 }

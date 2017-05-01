@@ -2,9 +2,9 @@
 import {test} from "tap"
 import {pathSatisfies} from "ramda"
 import {both} from "ramda"
-import {isPopulated} from "ramda-extra"
-import {endsWith} from "ramda-extra"
-import {lacksText} from "ramda-extra"
+import isPopulated from "@unction/ispopulated"
+import endsWith from "@unction/endswith"
+import lacksText from "@unction/lackstext"
 
 import validate from "./index"
 
