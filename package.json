@@ -27,6 +27,10 @@
   },
   "homepage": "https://github.com/krainboltgreene/validus.js#readme",
   "devDependencies": {
+    "@unction/endswith": "1.0.0",
+    "@unction/ispopulated": "1.0.0",
+    "@unction/ispresent": "1.0.0",
+    "@unction/lackstext": "1.0.0",
     "babel-cli": "6.24.0",
     "babel-core": "6.24.0",
     "babel-eslint": "7.2.1",
@@ -48,6 +52,8 @@
     "tap": "10.3.0"
   },
   "dependencies": {
-    "ramda": "0.23.0",
+    "@unction/compact": "1.0.0",
+    "@unction/mapvalues": "1.0.2",
+    "ramda": "0.23.0"
   }
 }
